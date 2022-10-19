@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/asa285655_user_icon" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bege"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:text="Sistema de Cadastro"
+            android:textSize="45dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/texto"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:text="Bem vindo ao sistema de cadastro.
+        Escolha uma das opções abaixo"
+        android:textSize="25dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnCadastrarUsu"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/marrom"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Cadastrar usuário"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/btnListarUsu"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnCadastrarUsu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/marrom"
+        android:padding="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Listar usuários cadastrados"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="202dp"
+        android:layout_height="221dp"
+        app:srcCompat="@drawable/user" />
+</RelativeLayout>
